@@ -1,0 +1,127 @@
+name: gintonic
+type: theme
+'base theme': claro
+core_version_requirement: ^10
+starterkit: true
+libraries:
+  - claro/global-styling
+  - gintonic/gin
+libraries-override:
+  core/drupal.tableselect:
+    js:
+      misc/tableselect.js: js/overrides/tableselect.js
+  core/drupal.tableheader:
+    js:
+      misc/tableheader.js: js/overrides/tableheader.js
+  media_library/view:
+    js:
+      js/media_library.view.js: js/overrides/media_library.view.js
+  claro/claro.drupal.dialog:
+    css:
+      theme:
+        css/components/dialog.css: false
+  core/drupal.dialog.off_canvas:
+    css:
+      base:
+        misc/dialog/off-canvas.base.css: false
+        misc/dialog/off-canvas.css: false
+        misc/dialog/off-canvas.theme.css: false
+  paragraphs_ee/paragraphs_ee.off_canvas:
+    css:
+      theme:
+        css/paragraphs_ee.off_canvas.css: false
+  claro/global-styling:
+    css:
+      layout:
+        css/layout/local-actions.css: false
+      theme:
+        css/theme/colors.css: false
+libraries-extend:
+  core/drupal.autocomplete:
+    - gintonic/autocomplete
+  core/ckeditor:
+    - gintonic/ckeditor
+  ckeditor/ckeditor:
+    - gintonic/ckeditor
+  core/ckeditor5:
+    - gintonic/ckeditor5
+  core/drupal.dialog:
+    - gintonic/dialog
+  core/drupal.ajax:
+    - gintonic/ajax
+  media/media_embed_ckeditor_theme:
+    - gintonic/gin_media_embed_ckeditor_theme
+  media_library/view:
+    - gintonic/media_library
+  media_library/widget:
+    - gintonic/media_library
+  contextual/drupal.contextual-links:
+    - gintonic/contextual_links
+  autosave_form/drupal.autosave_form:
+    - gintonic/autosave
+  chosen/drupal.chosen:
+    - gintonic/chosen
+  dropzonejs/widget:
+    - gintonic/dropzonejs
+  entity_browser/entity_browser:
+    - gintonic/entity_browser
+  entity_browser/tabs:
+    - gintonic/entity_browser
+  entity_browser/entity_list:
+    - gintonic/entity_browser
+  entity_browser/entity_reference:
+    - gintonic/entity_browser
+  linkit/linkit.admin:
+    - gintonic/linkit
+  module_filter/modules.tabs:
+    - gintonic/module_filter
+  module_filter/update.status:
+    - gintonic/module_filter
+  module_filter/modules:
+    - gintonic/module_filter
+  upgrade_status/upgrade_status.admin:
+    - gintonic/upgrade_status
+  webform/webform.filter:
+    - gintonic/webform
+  webform_ui/webform_ui:
+    - gintonic/webform
+  webform/webform.element.help:
+    - gintonic/webform
+  webform/webform.element.details.toggle:
+    - gintonic/webform
+  webform/webform.form.tabs:
+    - gintonic/webform
+  workbench/workbench.toolbar:
+    - gintonic/workbench
+  paragraphs/drupal.paragraphs.widget:
+    - gintonic/paragraphs
+  paragraphs_ee/paragraphs_ee.paragraphs:
+    - gintonic/paragraphs_ee
+  entity_reference_layout/erl_widget:
+    - gintonic/entity_reference_layout
+    - gintonic/layout_paragraphs
+  layout_paragraphs/layout_paragraphs_widget:
+    - gintonic/layout_paragraphs
+  responsive_preview/drupal.responsive-preview:
+    - gintonic/responsive_preview
+ckeditor_stylesheets:
+  - dist/css/theme/accent.css
+  - dist/css/theme/variables.css
+  - dist/css/theme/ckeditor.css
+ckeditor5-stylesheets: false
+regions:
+  header: Header
+  pre_content: Pre-content
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first
+version: 8.x-3.0-rc1
+project: gin
+datestamp: 1669666695
+generator: 'gin:8.x-3.0-rc1'
