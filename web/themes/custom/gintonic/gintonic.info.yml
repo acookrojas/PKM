@@ -1,11 +1,14 @@
 name: gintonic
-type: theme
-'base theme': claro
+type: subtheme
+'base theme': gin
+description: Gin for the frontend
 core_version_requirement: ^10
 starterkit: true
+
 libraries:
   - claro/global-styling
   - gintonic/gin
+
 libraries-override:
   core/drupal.tableselect:
     js:
@@ -36,6 +39,7 @@ libraries-override:
         css/layout/local-actions.css: false
       theme:
         css/theme/colors.css: false
+
 libraries-extend:
   core/drupal.autocomplete:
     - gintonic/autocomplete
@@ -109,6 +113,7 @@ ckeditor_stylesheets:
   - dist/css/theme/variables.css
   - dist/css/theme/ckeditor.css
 ckeditor5-stylesheets: false
+
 regions:
   header: Header
   pre_content: Pre-content
@@ -121,6 +126,7 @@ regions:
   sidebar_first: 'First sidebar'
 regions_hidden:
   - sidebar_first
+
 version: 8.x-3.0-rc1
 project: gin
 datestamp: 1669666695
